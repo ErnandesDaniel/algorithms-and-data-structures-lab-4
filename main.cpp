@@ -1,6 +1,6 @@
 #include <iostream>
-#include <vector>
 #include <string>
+#include <vector>
 
 using namespace std;
 
@@ -18,11 +18,11 @@ int main() {
     }
 
     if (!first_suite) {
-      cout << "\n"; // Print a blank line before each suite except the first
+      cout << "\n";  // Print a blank line before each suite except the first
     }
     first_suite = false;
 
-    vector<long long> arr(n + 1); // Using 1-based indexing for easier range handling
+    vector<long long> arr(n + 1);  // Using 1-based indexing for easier range handling
     for (int i = 1; i <= n; ++i) {
       cin >> arr[i];
     }
@@ -41,7 +41,7 @@ int main() {
         for (int j = x; j < y; j += 2) {
           swap(arr[j], arr[j + 1]);
         }
-      } else if (query_type == 2) { // query_type == 2
+      } else if (query_type == 2) {  // query_type == 2
         int a, b;
         cin >> a >> b;
         long long sum = 0;
